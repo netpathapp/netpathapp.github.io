@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>NetPath: tu patrimonio neto en un solo número</title>
+  <meta name="description" content="NetPath suma tus cuentas, inversiones, inmuebles y deudas y te muestra tu patrimonio neto. Sin conectar bancos y con tus datos solo en tu móvil. Para iPhone y Android.">
+  <meta name="theme-color" content="#F4F4F1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NetPath: tu patrimonio neto en un solo número">
+  <meta property="og:description" content="Sin conectar bancos. Tus datos se quedan en tu móvil. Gratis para empezar.">
+  <meta property="og:locale" content="es_ES">
+  <link rel="icon" href="assets/brand/app-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/brand/app-icon-1024.png">
+  <link rel="preload" href="assets/fonts/archivo-600.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Shared icons (status bar of the phone mockups, checks) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-signal" viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1" fill="currentColor"/><rect x="5" y="5" width="3" height="7" rx="1" fill="currentColor"/><rect x="10" y="2.5" width="3" height="9.5" rx="1" fill="currentColor"/><rect x="15" y="0" width="3" height="12" rx="1" fill="currentColor"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 17 12"><path d="M1 4.300a10.500 10.500 0 0 1 15 0" fill="none" stroke="currentColor" stroke-width="1.700" stroke-linecap="round"/><path d="M3.700 7a6.700 6.700 0 0 1 9.600 0" fill="none" stroke="currentColor" stroke-width="1.700" stroke-linecap="round"/><circle cx="8.500" cy="10" r="1.500" fill="currentColor"/></symbol>
+  <symbol id="i-battery" viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.200" fill="none" stroke="currentColor" opacity=".4"/><rect x="2" y="2" width="20" height="8" rx="2" fill="currentColor"/><path d="M25 4v4c.8-.3 1.500-1.100 1.500-2S25.800 4.300 25 4Z" fill="currentColor" opacity=".45"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.500l4.500 4.500L19 7.500" fill="none" stroke="currentColor" stroke-width="2.400" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="NetPath, inicio"><img src="assets/brand/netpath-lockup.svg" alt="NetPath" width="116" height="30"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#beneficios">Funciones</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#precios">Precios</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <a class="btn btn-dark btn-sm" href="#descargar">Descargar gratis</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- 1. Hero -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1 class="h-display">Por fin, todo tu patrimonio en un solo número.</h1>
+      <p class="lead">NetPath suma tus cuentas, inversiones, inmuebles y vehículos, resta hipotecas y préstamos, y te muestra tu patrimonio neto. No es una app de gastos ni te pide acceso a tu banco.</p>
+      <div class="stores" id="hero-stores" data-stores>
+        <a class="store" data-store="ios" aria-disabled="true"><span class="store-small">Próximamente en</span><span class="store-big">App Store</span></a>
+        <a class="store" data-store="android" aria-disabled="true"><span class="store-small">Próximamente en</span><span class="store-big">Google Play</span></a>
+      </div>
+      <ul class="trust">
+        <li><svg><use href="#i-check"/></svg>Sin conexión bancaria</li>
+        <li><svg><use href="#i-check"/></svg>Tus datos no salen de tu móvil</li>
+        <li><svg><use href="#i-check"/></svg>iPhone y Android</li>
+      </ul>
+    </div>
+    <div class="hero-panel">
+      <svg class="path" viewBox="0 0 100 100" aria-hidden="true"><g fill="currentColor"><rect x="-20.72" y="-5.5" width="41.44" height="11" transform="translate(39.13 50) rotate(-50)"/><rect x="-15" y="-5.5" width="30" height="11" transform="translate(62.38 45.62) rotate(-50)"/><circle cx="70.91" cy="61.91" r="7.5"/></g></svg>
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="statusbar"><span>9:41</span><span class="icons"><svg><use href="#i-signal"/></svg><svg><use href="#i-wifi"/></svg><svg><use href="#i-battery"/></svg></span></div>
+          <img src="assets/screens/home.webp" width="780" height="1688" alt="Pantalla de inicio de NetPath con un patrimonio neto de 184.320 euros y su evolución en el último año">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. Problema -->
+<section class="section on-dark" aria-labelledby="t-problema">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="h-display" id="t-problema">¿Cuánto vales hoy? La mayoría solo lo intuye.</h2>
+      <p class="lead">No es falta de dinero ni de ganas. Es que nadie te enseña la foto completa.</p>
+    </div>
+    <div class="pains">
+      <div class="pain"><h3>Tu dinero vive en ocho sitios</h3><p>Banco, exchange, plan de pensiones, la casa… y ninguna app te lo junta.</p></div>
+      <div class="pain"><h3>La hoja de cálculo que nunca actualizas</h3><p>Empiezas con ilusión un domingo y a las tres semanas ya está desfasada.</p></div>
+      <div class="pain"><h3>Ahorras, pero no ves tu progreso</h3><p>Sin una referencia clara, es difícil saber si de verdad avanzas o solo te mueves.</p></div>
+      <div class="pain"><h3>Las deudas no salen en la foto</h3><p>La hipoteca y las tarjetas cuentan, pero casi nunca aparecen al lado de lo que tienes.</p></div>
+    </div>
+    <p class="pain-close">Sin una cifra clara, cada decisión con tu dinero se toma a ciegas.</p>
+  </div>
+</section>
+
+<!-- 3. Solución -->
+<section class="section solution" aria-labelledby="t-solucion">
+  <div class="wrap">
+    <div class="tile"><img src="assets/brand/app-icon.svg" alt="" width="72" height="72"></div>
+    <div class="section-head center">
+      <h2 class="h-display" id="t-solucion">Por eso creamos NetPath.</h2>
+      <p class="lead">Una app sencilla para ver todo tu patrimonio, lo que tienes y lo que debes, en una cifra siempre actualizada. Registras tus cuentas en unos minutos y NetPath sigue el precio de tus inversiones. Sin bancos conectados y con tus datos en tu móvil.</p>
+    </div>
+    <div class="sum" role="group" aria-label="Ejemplo de cálculo del patrimonio neto">
+      <div class="sum-box"><small>Lo que tienes</small><strong>352.900 €</strong></div>
+      <span class="sum-op" aria-hidden="true">−</span>
+      <div class="sum-box"><small>Lo que debes</small><strong>168.580 €</strong></div>
+      <span class="sum-op" aria-hidden="true">=</span>
+      <div class="sum-box total"><small>Tu patrimonio neto</small><strong>184.320 €</strong></div>
+    </div>
+    <p class="fine">Datos de ejemplo.</p>
+  </div>
+</section>
+
+<!-- 3b. Beneficios -->
+<section class="section" id="beneficios" style="padding-top:0" aria-labelledby="t-beneficios">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="h-display" id="t-beneficios">Más claridad, menos esfuerzo.</h2>
+      <p class="lead">Lo que ganas cuando todo tu patrimonio está en un solo sitio.</p>
+    </div>
+    <div class="benefits">
+      <article class="benefit feature">
+        <h3>Claridad total en un solo número</h3>
+        <p>Cuentas, inversiones, inmuebles, vehículos, hipotecas y tarjetas sumados y restados. Tu patrimonio neto, sin cálculos.</p>
+        <div class="mini" aria-label="Ejemplo">
+          <div>Lo que tienes <b>352.900 €</b></div>
+          <div>Lo que debes <b>168.580 €</b></div>
+          <div class="sum-line">Patrimonio neto <b>184.320 €</b></div>
+        </div>
+      </article>
+      <article class="benefit">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span>
+        <h3>Ve tu progreso</h3>
+        <p>Una gráfica a 6 meses, 1 año o todo el histórico, para saber si de verdad avanzas.</p>
+      </article>
+      <article class="benefit">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></span>
+        <h3>Inversiones que se actualizan solas</h3>
+        <p>Activa los precios en vivo para criptomonedas, acciones, ETFs y materias primas. Solo se envía el símbolo, nunca tus datos.</p>
+      </article>
+      <article class="benefit">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg></span>
+        <h3>Control total, sin conectar bancos</h3>
+        <p>Tú decides qué apuntar y cuándo. Sin contraseñas bancarias y sin intermediarios.</p>
+      </article>
+      <article class="benefit">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+        <h3>Privacidad de verdad</h3>
+        <p>Sin cuenta, sin servidor para tus datos financieros, sin anuncios ni analíticas. Protégela con Face ID o huella.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Cómo funciona -->
+<section class="section" id="como-funciona" style="padding-top:0" aria-labelledby="t-pasos">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="h-display" id="t-pasos">En marcha en tres pasos.</h2>
+      <p class="lead">Sin formularios eternos ni claves bancarias.</p>
+    </div>
+    <ol class="steps" style="list-style:none;padding:0;margin:0">
+      <li class="step">
+        <span class="step-n">1</span>
+        <h3>Registra tus activos y deudas</h3>
+        <p>Cuentas, inversiones, inmuebles, vehículos, hipotecas y tarjetas. Un par de minutos con lo que ya sabes de memoria.</p>
+        <div class="step-demo" aria-hidden="true"><div class="chips"><span class="chip">Banco</span><span class="chip">Ahorro</span><span class="chip on">Inversión</span><span class="chip">Vivienda</span><span class="chip">Vehículo</span><span class="chip">Hipoteca</span></div></div>
+      </li>
+      <li class="step">
+        <span class="step-n">2</span>
+        <h3>NetPath actualiza tus inversiones</h3>
+        <p>Si activas los precios en vivo, eliges el ticker y la cantidad que tienes, y el valor se calcula solo.</p>
+        <div class="step-demo" aria-hidden="true">
+          <div class="row"><span>Fondo indexado MSCI World</span><b>74.000 €</b></div>
+          <div class="row"><span>Bitcoin</span><b>8.000 €</b></div>
+          <small style="color:var(--muted)">Ejemplo de inversiones con precio en vivo</small>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-n">3</span>
+        <h3>Mira tu patrimonio real</h3>
+        <p>Tu cifra neta, cómo evoluciona mes a mes y qué aporta cada parte. Revísalo cuando quieras o con un recordatorio.</p>
+        <div class="step-demo" aria-hidden="true">
+          <div class="row"><b style="font-family:var(--display);font-size:24px;letter-spacing:-.03em">184.320 €</b><small>último año</small></div>
+          <svg class="spark" viewBox="0 0 200 64" preserveAspectRatio="none"><path d="M0 52 L17 50 L33 45 L50 47 L67 39 L83 36 L100 30 L117 26 L133 24 L150 17 L167 14 L183 9 L200 5 L200 64 L0 64 Z" fill="#93BA8F" opacity=".22"/><path d="M0 52 L17 50 L33 45 L50 47 L67 39 L83 36 L100 30 L117 26 L133 24 L150 17 L167 14 L183 9 L200 5" fill="none" stroke="#2B2B2B" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- Pantallas -->
+<section class="section screens-band" aria-labelledby="t-pantallas">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2 class="h-display" id="t-pantallas">Diseñada para entenderse en segundos.</h2>
+      <p class="lead" style="color:#55544f">Cuatro pantallas que responden a las preguntas que importan.</p>
+    </div>
+    <div class="screens" role="list">
+      <figure role="listitem">
+        <div class="phone"><div class="phone-screen"><div class="statusbar"><span>9:41</span><span class="icons"><svg><use href="#i-signal"/></svg><svg><use href="#i-wifi"/></svg><svg><use href="#i-battery"/></svg></span></div><img loading="lazy" src="assets/screens/home.webp" width="780" height="1688" alt="Inicio: patrimonio neto y evolución"></div></div>
+        <figcaption><b>Tu patrimonio, de un vistazo</b><span>El total, el cambio del mes y la gráfica, nada más abrir la app.</span></figcaption>
+      </figure>
+      <figure role="listitem">
+        <div class="phone"><div class="phone-screen"><div class="statusbar"><span>9:41</span><span class="icons"><svg><use href="#i-signal"/></svg><svg><use href="#i-wifi"/></svg><svg><use href="#i-battery"/></svg></span></div><img loading="lazy" src="assets/screens/wealth.webp" width="780" height="1688" alt="Patrimonio: lo que tienes y lo que debes, por categorías"></div></div>
+        <figcaption><b>Todo lo que tienes y lo que debes</b><span>Activos, deudas y liquidez, agrupados por categoría.</span></figcaption>
+      </figure>
+      <figure role="listitem">
+        <div class="phone"><div class="phone-screen"><div class="statusbar"><span>9:41</span><span class="icons"><svg><use href="#i-signal"/></svg><svg><use href="#i-wifi"/></svg><svg><use href="#i-battery"/></svg></span></div><img loading="lazy" src="assets/screens/history.webp" width="780" height="1688" alt="Histórico del patrimonio neto con instantáneas mensuales"></div></div>
+        <figcaption><b>Mira hacia dónde vas</b><span>Gráfica y registro mes a mes, para ver la tendencia real.</span></figcaption>
+      </figure>
+      <figure role="listitem">
+        <div class="phone"><div class="phone-screen"><div class="statusbar"><span>9:41</span><span class="icons"><svg><use href="#i-signal"/></svg><svg><use href="#i-wifi"/></svg><svg><use href="#i-battery"/></svg></span></div><img loading="lazy" src="assets/screens/investments.webp" width="780" height="1688" alt="Inversiones: capital aportado frente a intereses generados"></div></div>
+        <figcaption><b>Tus inversiones, con su rendimiento</b><span>Lo que has aportado frente a lo que has ganado.</span></figcaption>
+      </figure>
+    </div>
+    <ul class="feature-list" aria-label="Más funciones">
+      <li>7 tipos de cuenta</li><li>Calculadora de interés compuesto</li><li>Estimación de impuestos (España)</li><li>Informe mensual en PDF</li><li>Recordatorios semanales o mensuales</li><li>Exporta tus datos en JSON</li><li>EUR, USD, GBP y CHF</li><li>Modo claro y oscuro</li>
+    </ul>
+    <p class="fine" style="text-align:center">Capturas con datos de ejemplo. La app está por ahora en inglés.</p>
+  </div>
+</section>
+
+<!-- 5. Precios -->
+<section class="section" id="precios" aria-labelledby="t-precios">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2 class="h-display" id="t-precios">Gratis de verdad. Pro cuando lo necesites.</h2>
+      <p class="lead">La versión gratuita ya te da la foto completa. Pro es para quien tiene el patrimonio repartido en muchos sitios.</p>
+    </div>
+    <div class="plans">
+      <article class="plan plan-free">
+        <div class="plan-head"><h3>Gratis</h3><span class="pill">Para empezar</span></div>
+        <p class="price">0 €<small>para siempre</small></p>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Hasta 5 cuentas</li>
+          <li><svg><use href="#i-check"/></svg>Precios en vivo de criptomonedas, acciones, ETFs y materias primas</li>
+          <li><svg><use href="#i-check"/></svg>Histórico y gráficas de tu patrimonio</li>
+          <li><svg><use href="#i-check"/></svg>Reparto por tipo de activo e inversiones</li>
+          <li><svg><use href="#i-check"/></svg>Calculadora de interés compuesto</li>
+          <li><svg><use href="#i-check"/></svg>Face ID o huella, modo privado y recordatorios</li>
+          <li><svg><use href="#i-check"/></svg>Exportación de tus datos en JSON</li>
+        </ul>
+        <a class="btn btn-dark" href="#descargar">Descargar gratis</a>
+      </article>
+      <article class="plan plan-pro on-dark">
+        <div class="plan-head"><h3>Pro</h3><span class="pill">Ahorra un 33 %</span></div>
+        <div><p class="price">24 €<small>al año · 2 € al mes</small></p><p class="sub" style="font-size:15px;margin-top:8px">o 3 € al mes si prefieres pagar mensualmente</p></div>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Todo lo del plan gratuito</li>
+          <li><svg><use href="#i-check"/></svg>Cuentas ilimitadas</li>
+          <li><svg><use href="#i-check"/></svg>Informe mensual en PDF con tu marca y tus datos</li>
+          <li><svg><use href="#i-check"/></svg>Estimación de plusvalías e Impuesto sobre el Patrimonio (España)</li>
+          <li><svg><use href="#i-check"/></svg>Todo lo que añadamos en el futuro</li>
+        </ul>
+        <a class="btn btn-sage" href="#descargar">Empieza gratis y pásate a Pro</a>
+      </article>
+    </div>
+    <p class="price-note">Precios previstos para el lanzamiento. Las suscripciones se cobran y se gestionan desde App Store y Google Play, y puedes cancelarlas cuando quieras. Las estimaciones fiscales son orientativas y no constituyen asesoramiento.</p>
+  </div>
+</section>
+
+<!-- 6. FAQ -->
+<section class="section" id="preguntas" style="padding-top:0" aria-labelledby="t-faq">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2 class="h-display" id="t-faq">Antes de descargar.</h2>
+    </div>
+    <div class="faq">
+      <details><summary>¿Se conecta a mi banco?</summary><div class="answer">No, y es a propósito. NetPath nunca te pide credenciales bancarias ni conecta con tus cuentas. Tú apuntas tus saldos, y así tus claves no pasan por ninguna aplicación.</div></details>
+      <details><summary>¿Mis datos están seguros?</summary><div class="answer">Tus cuentas, saldos e inversiones se guardan solo en tu móvil. No hay registro de usuario ni un servidor donde estén tus datos financieros, no usamos analíticas ni publicidad, y puedes bloquear la app con Face ID o huella. Lo único que puede salir del móvil es un email, si decides dejarlo para recibir novedades. <a href="privacy/">Lee la política de privacidad</a>.</div></details>
+      <details><summary>¿Qué incluye la versión gratuita y qué el plan Pro?</summary><div class="answer">La gratuita incluye hasta 5 cuentas con precios en vivo, histórico, gráficas e inversiones. Pro añade cuentas ilimitadas, el informe mensual en PDF y la estimación de impuestos para España.</div></details>
+      <details><summary>¿Funciona con inversiones en diferentes brokers?</summary><div class="answer">Sí. NetPath no depende de tu broker: apuntas cada posición, o el ticker y la cantidad si activas el precio en vivo, y todo se suma en un único patrimonio. Los precios en vivo se obtienen de Binance (criptomonedas) y de Yahoo Finance (acciones, ETFs y materias primas).</div></details>
+      <details><summary>¿Puedo usarla con activos y también con deudas?</summary><div class="answer">Sí. Puedes añadir hipotecas, préstamos y tarjetas de crédito, y se restan de lo que tienes para dar tu patrimonio neto real.</div></details>
+      <details><summary>¿Qué pasa si cambio de móvil o borro la app?</summary><div class="answer">Como tus datos viven solo en tu dispositivo, no hay copia en la nube. Antes de cambiar de móvil o desinstalar, usa la opción de exportar tus datos en JSON para guardarlos donde prefieras.</div></details>
+      <details><summary>¿Hay asesoramiento financiero o fiscal?</summary><div class="answer">No. NetPath es una herramienta para ver y entender tu patrimonio. Las estimaciones de impuestos son orientativas y conviene confirmarlas con un profesional.</div></details>
+      <details><summary>¿La app está en español?</summary><div class="answer">Por ahora la app está en inglés. Estamos trabajando en la versión en español.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Cierre -->
+<section class="section on-dark cta-final" id="descargar" aria-labelledby="t-cierre">
+  <div class="wrap">
+    <div class="tile"><img src="assets/brand/app-icon.svg" alt="" width="64" height="64"></div>
+    <h2 class="h-display" id="t-cierre" style="font-size:clamp(32px,7vw,56px)">Tu patrimonio ya existe. Empieza a verlo.</h2>
+    <p class="lead">Todo lo que tienes y todo lo que debes, en una cifra actualizada y privada.</p>
+    <div class="stores stores--light" data-stores>
+      <a class="store" data-store="ios" aria-disabled="true"><span class="store-small">Próximamente en</span><span class="store-big">App Store</span></a>
+      <a class="store" data-store="android" aria-disabled="true"><span class="store-small">Próximamente en</span><span class="store-big">Google Play</span></a>
+    </div>
+    <p class="fine" style="color:var(--muted-on-dark)">Empieza gratis. Cancela cuando quieras.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer on-dark">
+  <div class="wrap">
+    <div class="foot-top">
+      <img src="assets/brand/netpath-lockup-on-dark.svg" alt="NetPath" width="116" height="28">
+      <nav class="foot-links" aria-label="Legal y contacto">
+        <a href="privacy/">Política de privacidad</a>
+        <a href="mailto:barnacle1982@altmail.kr">Contacto</a>
+      </nav>
+    </div>
+    <p class="foot-small">© <span id="year">2026</span> NetPath. NetPath es una herramienta de seguimiento y no ofrece asesoramiento financiero, fiscal ni legal. App Store es una marca de Apple Inc. Google Play es una marca de Google LLC.</p>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="sticky" aria-hidden="true"><a class="btn btn-dark" href="#descargar" tabindex="-1">Descargar gratis</a></div>
+
+<script src="main.js"></script>
+</body>
+</html>

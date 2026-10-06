@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NetPath Privacy Policy</title>
+<style>
+@font-face { font-family: "Roboto"; font-weight: 400; font-display: swap; src: url("../assets/fonts/roboto-400.woff") format("woff"); }
+@font-face { font-family: "Roboto"; font-weight: 500; font-display: swap; src: url("../assets/fonts/roboto-500.woff") format("woff"); }
+@font-face { font-family: "Roboto"; font-weight: 700; font-display: swap; src: url("../assets/fonts/roboto-700.woff") format("woff"); }
+</style>
+<link rel="icon" href="../assets/brand/app-icon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --bg: #D6D4CE;
+    --card: #FFFFFF;
+    --card2: #E7E5DF;
+    --fg: #121211;
+    --muted: #6B6A66;
+    --line: #C9C7C0;
+    --accent: #93BA8F;
+    --pos: #1E7A34;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0C0C0B; --card: #1A1A18; --card2: #221F1D; --fg: #F3F3EE; --muted: #A7A6A1;
+      --line: #2E2E2B; --accent: #93BA8F; --pos: #9BE06A; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0C0C0B; --card: #1A1A18; --card2: #221F1D; --fg: #F3F3EE; --muted: #A7A6A1;
+    --line: #2E2E2B; --accent: #93BA8F; --pos: #9BE06A; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--fg);
+    font-family: 'Roboto', -apple-system, system-ui, sans-serif;
+    margin: 0; padding-inline: 20px; padding-block: 32px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  .logo-mark { width: 40px; height: 40px; border-radius: 22.4%; overflow: hidden; flex: none; display: flex; }
+  .logo-mark svg { display: block; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  header .word { font-weight: 700; font-size: 17px; line-height: 1.2; }
+  header .sub { font-size: 12.5px; color: var(--muted); margin-top: 1px; }
+  h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.3px; margin: 0 0 4px; text-wrap: balance; }
+  .updated { font-size: 13px; color: var(--muted); margin-bottom: 28px; }
+  .tldr { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px 22px; margin-bottom: 32px; }
+  .tldr .label {
+    display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
+    background: var(--accent); color: #2B2B2B; padding: 4px 10px; border-radius: 999px;
+    text-transform: uppercase; margin-bottom: 12px;
+  }
+  .tldr ul { margin: 0; padding-left: 18px; }
+  .tldr li { margin-bottom: 8px; line-height: 1.5; font-size: 14.5px; }
+  .tldr li:last-child { margin-bottom: 0; }
+  .tldr strong { font-weight: 600; }
+  section { margin-bottom: 30px; }
+  h2 { font-size: 17px; font-weight: 700; margin: 0 0 10px; border-top: 1px solid var(--line); padding-top: 18px; }
+  section:first-of-type h2 { border-top: none; padding-top: 0; }
+  p { line-height: 1.65; font-size: 14.5px; margin: 0 0 12px; }
+  p:last-child { margin-bottom: 0; }
+  ul.plain { margin: 0 0 12px; padding-left: 18px; line-height: 1.6; font-size: 14.5px; }
+  ul.plain li { margin-bottom: 6px; }
+  .service-table { width: 100%; border-collapse: collapse; margin: 14px 0 4px; font-size: 13.5px; }
+  .service-table th {
+    text-align: left; font-size: 11px; letter-spacing: 0.04em; color: var(--muted);
+    font-weight: 600; text-transform: uppercase; padding: 0 10px 8px 0; border-bottom: 1px solid var(--line);
+  }
+  .service-table td { padding: 10px 10px 10px 0; border-bottom: 1px solid var(--line); vertical-align: top; line-height: 1.5; }
+  .service-table tr:last-child td { border-bottom: none; }
+  .service-table .svc { font-weight: 600; white-space: nowrap; }
+  .pill { display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 999px; background: var(--card2); color: var(--fg); }
+  .pill.local { background: color-mix(in srgb, var(--pos) 18%, transparent); color: var(--pos); }
+  .contact-box { background: var(--fg); color: var(--bg); border-radius: 18px; padding: 22px; margin-top: 8px; }
+  .contact-box h2 { color: var(--bg); border: none; padding-top: 0; }
+  .contact-box p { color: color-mix(in srgb, var(--bg) 78%, transparent); }
+  .contact-box .email {
+    display: inline-block; margin-top: 6px; font-weight: 700; font-size: 15px;
+    color: var(--bg); text-decoration: underline; text-underline-offset: 3px; word-break: break-all;
+  }
+  footer { margin-top: 36px; font-size: 12px; color: var(--muted); text-align: center; }
+  @media (max-width: 480px) { h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a href="../" aria-label="Volver a NetPath" style="display:contents;color:inherit;text-decoration:none">
+    <div class="logo-mark"><svg viewBox="0 0 100 100" width="40" height="40" aria-hidden="true"><rect width="100" height="100" fill="#93BA8F"/><rect x="-20.72" y="-5.5" width="41.44" height="11" transform="translate(39.13 50) rotate(-50)" fill="#2B2B2B"/><rect x="-15" y="-5.5" width="30" height="11" transform="translate(62.38 45.62) rotate(-50)" fill="#2B2B2B"/><circle cx="70.91" cy="61.91" r="7.5" fill="#FFFFFF"/></svg></div>
+    <div>
+      <div class="word">NetPath</div>
+      <div class="sub">Privacy Policy</div>
+    </div>
+      </a>
+  </header>
+
+  <h1>Your money stays on your phone.</h1>
+  <p class="updated">Last updated 6 October 2026</p>
+
+  <div class="tldr">
+    <div class="label">The short version</div>
+    <ul>
+      <li><strong>No account, no login, no cloud sync.</strong> Every account, balance and transaction you enter is stored only in NetPath's local storage on your device.</li>
+      <li>We never see it, back it up, or have a way to retrieve it — if you delete the app, it's gone, unless you exported a backup yourself.</li>
+      <li>Looking up a live crypto or stock price sends only a ticker symbol to Binance or Yahoo Finance — never your holdings, your name, or anything that identifies you.</li>
+      <li>The only thing that ever leaves your device tied to <em>you</em> is an email address, and only if you choose to type one into the optional "Stay in touch" field in Settings.</li>
+      <li>No ads, no analytics, no trackers, nothing sold to anyone.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>1. The data that never leaves your device</h2>
+    <p>
+      NetPath has no backend server for your financial data and no user accounts. Everything you enter — accounts,
+      balances, transactions, notes, tax settings, your preferences — is written to your device's local
+      storage and read back only by the app, only on that device. There is no sync, no cloud backup, and no
+      mechanism in the app for that data to reach us or anyone else.
+    </p>
+    <p>
+      If you use the <strong>Export data</strong> option in Settings, NetPath builds a JSON file on your device and
+      hands it to your phone's own share sheet — where it goes next (AirDrop, email, a cloud drive) is entirely your
+      choice, made outside the app.
+    </p>
+    <p>
+      The <strong>monthly report</strong> works the same way: NetPath builds the PDF on your device from your local
+      data and hands it to your phone's share sheet. It is only ever saved or sent where you choose to put it.
+    </p>
+    <p>
+      If you turn on <strong>reminders</strong>, NetPath asks your phone's operating system to show a notification on a
+      schedule (for example on the 1st of each month). The schedule lives on your device and is run by the system —
+      no server is involved, and no notification token is created or sent anywhere.
+    </p>
+    <p>
+      If you enable <strong>Face ID lock</strong>, authentication is handled entirely by your device's operating
+      system. NetPath asks "was this person verified?" and gets a yes or no — it never receives your fingerprint,
+      face data, or anything biometric.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Live price lookups</h2>
+    <p>
+      If you turn on <strong>Live prices</strong> in Settings, NetPath periodically asks two public, third-party
+      price services for current values. Each request sends only what's needed to look up a price — never your
+      quantities, your account names, or any way to tie the request back to you.
+    </p>
+    <table class="service-table">
+      <tr><th>Service</th><th>Used for</th><th>What's sent</th></tr>
+      <tr>
+        <td class="svc">Binance public API</td>
+        <td>Crypto prices (BTC, ETH, SOL and others)</td>
+        <td>A trading pair symbol (e.g. "BTCEUR") and nothing else</td>
+      </tr>
+      <tr>
+        <td class="svc">Yahoo Finance</td>
+        <td>Stock, ETF and commodity prices, and ticker search</td>
+        <td>A ticker symbol, or your search text when you look one up, and nothing else</td>
+      </tr>
+    </table>
+    <p>Neither service receives your name, device ID, holdings, or any other identifying information from NetPath.</p>
+  </section>
+
+  <section>
+    <h2>3. The one optional exception: email updates</h2>
+    <p>
+      Settings includes an optional, clearly separate "Stay in touch" field. If — and only if — you type in an
+      email address and tap Subscribe, that address is sent to our database (hosted on Supabase) and used solely to
+      occasionally email you about new features or updates. It is stored in a table completely separate from app
+      functionality; nothing about your accounts, balances, or usage is attached to it, because nothing about those
+      is ever sent off your device in the first place.
+    </p>
+    <p>You can ask us to delete this email at any time — see the contact box at the bottom of this page.</p>
+  </section>
+
+  <section>
+    <h2>4. What we don't do</h2>
+    <ul class="plain">
+      <li>No bank or brokerage account connections, and no third-party financial data aggregators (e.g. Plaid). You type in your own numbers.</li>
+      <li>No analytics SDKs, crash reporters, or behavioral trackers of any kind.</li>
+      <li>No advertising, and no ad identifiers collected.</li>
+      <li>No selling, renting, or sharing of any data with data brokers or advertisers.</li>
+      <li>No account system — there's nothing to log into, so there's no password or profile tied to you.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. Data retention and deletion</h2>
+    <p>
+      <span class="pill local">On your device</span>
+      &nbsp;Your financial data lives for as long as the app is installed, or until you use <strong>Delete all
+      data</strong> in Settings. Uninstalling the app removes it entirely. We have no copy and no way to recover it
+      for you.
+    </p>
+    <p style="margin-top:14px;">
+      <span class="pill">Newsletter email</span>
+      &nbsp;Kept until you ask us to remove it, or until you unsubscribe via a link in any email we send.
+    </p>
+  </section>
+
+  <section>
+    <h2>6. Your rights</h2>
+    <p>
+      Because your financial data never leaves your device, you already hold it — there's nothing for us to export,
+      correct, or hand over on request, since we never had a copy. For the one thing we do hold (an optional
+      newsletter email), you can ask us at any time to tell you what we have, correct it, or delete it, under GDPR
+      or any equivalent local law that applies to you.
+    </p>
+  </section>
+
+  <section>
+    <h2>7. Children's privacy</h2>
+    <p>NetPath isn't directed at children, and we don't knowingly collect information from anyone under 16.</p>
+  </section>
+
+  <section>
+    <h2>8. This website</h2>
+    <p>
+      The NetPath website is a static page. It uses no cookies, analytics or trackers, and it serves its own fonts and
+      images instead of loading them from third parties. It is hosted on GitHub Pages, which, like any web host, may
+      process technical data such as your IP address in its server logs; we don't receive or use that data.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. Changes to this policy</h2>
+    <p>
+      If this policy changes in a way that matters — a new third-party service, a new type of data collected —
+      we'll update the "Last updated" date above. Since the app has no way to contact you directly, we'd encourage
+      checking back here occasionally if that matters to you.
+    </p>
+  </section>
+
+  <div class="contact-box">
+    <h2>Questions, or want your email removed?</h2>
+    <p>Reach out any time:</p>
+    <div class="email">barnacle1982@altmail.kr</div>
+  </div>
+
+  <footer>NetPath &middot; This page describes the app's current privacy practices and is not a substitute for legal advice.</footer>
+</div>
+</body>
+</html>
