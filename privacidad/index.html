@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Política de privacidad de NetPath</title>
+<style>
+@font-face { font-family: "Roboto"; font-weight: 400; font-display: swap; src: url("../assets/fonts/roboto-400.woff") format("woff"); }
+@font-face { font-family: "Roboto"; font-weight: 500; font-display: swap; src: url("../assets/fonts/roboto-500.woff") format("woff"); }
+@font-face { font-family: "Roboto"; font-weight: 700; font-display: swap; src: url("../assets/fonts/roboto-700.woff") format("woff"); }
+</style>
+<link rel="canonical" href="https://netpathapp.github.io/privacidad/">
+<link rel="alternate" hreflang="en" href="https://netpathapp.github.io/privacy/">
+<link rel="icon" href="../assets/brand/app-icon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --bg: #D6D4CE;
+    --card: #FFFFFF;
+    --card2: #E7E5DF;
+    --fg: #121211;
+    --muted: #6B6A66;
+    --line: #C9C7C0;
+    --accent: #93BA8F;
+    --pos: #1E7A34;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0C0C0B; --card: #1A1A18; --card2: #221F1D; --fg: #F3F3EE; --muted: #A7A6A1;
+      --line: #2E2E2B; --accent: #93BA8F; --pos: #9BE06A; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0C0C0B; --card: #1A1A18; --card2: #221F1D; --fg: #F3F3EE; --muted: #A7A6A1;
+    --line: #2E2E2B; --accent: #93BA8F; --pos: #9BE06A; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--fg);
+    font-family: 'Roboto', -apple-system, system-ui, sans-serif;
+    margin: 0; padding-inline: 20px; padding-block: 32px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  .logo-mark { width: 40px; height: 40px; border-radius: 22.4%; overflow: hidden; flex: none; display: flex; }
+  .logo-mark svg { display: block; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  header .word { font-weight: 700; font-size: 17px; line-height: 1.2; }
+  header .sub { font-size: 12.5px; color: var(--muted); margin-top: 1px; }
+  h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.3px; margin: 0 0 4px; text-wrap: balance; }
+  .updated { font-size: 13px; color: var(--muted); margin-bottom: 28px; }
+  .tldr { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px 22px; margin-bottom: 32px; }
+  .tldr .label {
+    display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
+    background: var(--accent); color: #2B2B2B; padding: 4px 10px; border-radius: 999px;
+    text-transform: uppercase; margin-bottom: 12px;
+  }
+  .tldr ul { margin: 0; padding-left: 18px; }
+  .tldr li { margin-bottom: 8px; line-height: 1.5; font-size: 14.5px; }
+  .tldr li:last-child { margin-bottom: 0; }
+  .tldr strong { font-weight: 600; }
+  section { margin-bottom: 30px; }
+  h2 { font-size: 17px; font-weight: 700; margin: 0 0 10px; border-top: 1px solid var(--line); padding-top: 18px; }
+  section:first-of-type h2 { border-top: none; padding-top: 0; }
+  p { line-height: 1.65; font-size: 14.5px; margin: 0 0 12px; }
+  p:last-child { margin-bottom: 0; }
+  ul.plain { margin: 0 0 12px; padding-left: 18px; line-height: 1.6; font-size: 14.5px; }
+  ul.plain li { margin-bottom: 6px; }
+  .service-table { width: 100%; border-collapse: collapse; margin: 14px 0 4px; font-size: 13.5px; }
+  .service-table th {
+    text-align: left; font-size: 11px; letter-spacing: 0.04em; color: var(--muted);
+    font-weight: 600; text-transform: uppercase; padding: 0 10px 8px 0; border-bottom: 1px solid var(--line);
+  }
+  .service-table td { padding: 10px 10px 10px 0; border-bottom: 1px solid var(--line); vertical-align: top; line-height: 1.5; }
+  .service-table tr:last-child td { border-bottom: none; }
+  .service-table .svc { font-weight: 600; white-space: nowrap; }
+  .pill { display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 999px; background: var(--card2); color: var(--fg); }
+  .pill.local { background: color-mix(in srgb, var(--pos) 18%, transparent); color: var(--pos); }
+  .contact-box { background: var(--fg); color: var(--bg); border-radius: 18px; padding: 22px; margin-top: 8px; }
+  .contact-box h2 { color: var(--bg); border: none; padding-top: 0; }
+  .contact-box p { color: color-mix(in srgb, var(--bg) 78%, transparent); }
+  .contact-box .email {
+    display: inline-block; margin-top: 6px; font-weight: 700; font-size: 15px;
+    color: var(--bg); text-decoration: underline; text-underline-offset: 3px; word-break: break-all;
+  }
+  footer { margin-top: 36px; font-size: 12px; color: var(--muted); text-align: center; }
+  @media (max-width: 480px) { h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a href="../" aria-label="Volver a NetPath" style="display:contents;color:inherit;text-decoration:none">
+    <div class="logo-mark"><svg viewBox="0 0 100 100" width="40" height="40" aria-hidden="true"><rect width="100" height="100" fill="#93BA8F"/><rect x="-20.72" y="-5.5" width="41.44" height="11" transform="translate(39.13 50) rotate(-50)" fill="#2B2B2B"/><rect x="-15" y="-5.5" width="30" height="11" transform="translate(62.38 45.62) rotate(-50)" fill="#2B2B2B"/><circle cx="70.91" cy="61.91" r="7.5" fill="#FFFFFF"/></svg></div>
+    <div>
+      <div class="word">NetPath</div>
+      <div class="sub">Política de privacidad</div>
+    </div>
+    </a>
+  </header>
+  <p class="updated" style="margin-bottom:8px"><a href="../privacy/" hreflang="en" lang="en">Read in English</a></p>
+
+  <h1>Tu dinero se queda en tu móvil.</h1>
+  <p class="updated">Última actualización: 6 de octubre de 2026</p>
+
+  <div class="tldr">
+    <div class="label">En resumen</div>
+    <ul>
+      <li><strong>Sin cuenta, sin inicio de sesión y sin sincronización en la nube.</strong> Cada cuenta, saldo y movimiento que introduces se guarda solo en el almacenamiento local de NetPath en tu dispositivo.</li>
+      <li>Nosotros nunca lo vemos, no lo copiamos y no tenemos forma de recuperarlo: si borras la app, desaparece, salvo que hayas exportado tú una copia de seguridad.</li>
+      <li>Consultar un precio en vivo de una criptomoneda, acción o ETF solo envía un símbolo a Binance o Yahoo Finance, nunca tus posiciones, tu nombre ni nada que te identifique.</li>
+      <li>Lo único que puede salir de tu dispositivo asociado a <em>ti</em> es una dirección de email, y solo si decides escribirla en el campo opcional «Stay in touch» de los Ajustes.</li>
+      <li>Sin anuncios, sin analíticas, sin rastreadores y sin vender nada a nadie.</li>
+    </ul>
+  </div>
+
+  <section>
+    <h2>1. Los datos que nunca salen de tu dispositivo</h2>
+    <p>
+      NetPath no tiene un servidor para tus datos financieros ni cuentas de usuario. Todo lo que introduces
+      (cuentas, saldos, movimientos, notas, ajustes fiscales y preferencias) se guarda en el almacenamiento local
+      de tu dispositivo y solo lo lee la app, en ese mismo dispositivo. No hay sincronización, ni copia en la nube,
+      ni ningún mecanismo en la app para que esos datos lleguen hasta nosotros o hasta otra persona.
+    </p>
+    <p>
+      Si usas la opción <strong>Export data</strong> de los Ajustes, NetPath genera un archivo JSON en tu dispositivo y
+      lo entrega al menú de compartir de tu teléfono. Dónde acabe después (AirDrop, email, un servicio en la nube) es
+      decisión tuya y se toma fuera de la app.
+    </p>
+    <p>
+      El <strong>informe mensual</strong> funciona igual: NetPath crea el PDF en tu dispositivo a partir de tus datos
+      locales y lo entrega al menú de compartir. Solo se guarda o se envía donde tú decidas.
+    </p>
+    <p>
+      Si activas los <strong>recordatorios</strong>, NetPath pide al sistema operativo de tu teléfono que muestre una
+      notificación según un calendario (por ejemplo, el día 1 de cada mes). El calendario vive en tu dispositivo y lo
+      ejecuta el sistema: no interviene ningún servidor y no se crea ni se envía a ningún sitio un token de notificaciones.
+    </p>
+    <p>
+      Si activas el <strong>bloqueo con Face ID</strong>, la autenticación la gestiona por completo el sistema
+      operativo de tu dispositivo. NetPath solo pregunta «¿se ha verificado a esta persona?» y recibe un sí o un no;
+      nunca recibe tu huella, tu rostro ni ningún dato biométrico.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Consulta de precios en vivo</h2>
+    <p>
+      Si activas <strong>Live prices</strong> en los Ajustes, NetPath consulta periódicamente a dos servicios públicos
+      de terceros los valores actuales. Cada petición envía solo lo necesario para buscar un precio, nunca tus
+      cantidades, los nombres de tus cuentas ni nada que permita vincular la petición contigo.
+    </p>
+    <table class="service-table">
+      <tr><th>Servicio</th><th>Para qué se usa</th><th>Qué se envía</th></tr>
+      <tr>
+        <td class="svc">API pública de Binance</td>
+        <td>Precios de criptomonedas (BTC, ETH, SOL y otras)</td>
+        <td>El símbolo de un par de cotización (por ejemplo «BTCEUR») y nada más</td>
+      </tr>
+      <tr>
+        <td class="svc">Yahoo Finance</td>
+        <td>Precios de acciones, ETFs y materias primas, y búsqueda de tickers</td>
+        <td>Un símbolo, o el texto que escribes cuando buscas uno, y nada más</td>
+      </tr>
+    </table>
+    <p>Ninguno de los dos servicios recibe de NetPath tu nombre, el identificador de tu dispositivo, tus posiciones ni ningún otro dato identificativo.</p>
+  </section>
+
+  <section>
+    <h2>3. La única excepción opcional: novedades por email</h2>
+    <p>
+      Los Ajustes incluyen un campo opcional y claramente separado llamado «Stay in touch». Si, y solo si, escribes
+      una dirección de email y pulsas Subscribe, esa dirección se envía a nuestra base de datos (alojada en Supabase)
+      y se usa únicamente para escribirte de vez en cuando sobre novedades de la app. Se guarda en una tabla
+      completamente separada del funcionamiento de la app; no lleva asociado nada de tus cuentas, saldos o uso, porque
+      nada de eso sale nunca de tu dispositivo.
+    </p>
+    <p>Puedes pedirnos que borremos ese email en cualquier momento; mira el cuadro de contacto al final de esta página.</p>
+  </section>
+
+  <section>
+    <h2>4. Lo que no hacemos</h2>
+    <ul class="plain">
+      <li>No conectamos con bancos ni brókers, ni usamos agregadores de datos financieros de terceros (como Plaid). Tú escribes tus propias cifras.</li>
+      <li>No usamos SDK de analíticas, informes de errores ni rastreadores de comportamiento de ningún tipo.</li>
+      <li>No hay publicidad y no recogemos identificadores publicitarios.</li>
+      <li>No vendemos, alquilamos ni compartimos datos con intermediarios de datos ni anunciantes.</li>
+      <li>No hay sistema de cuentas: no hay nada en lo que iniciar sesión, así que no existe contraseña ni perfil asociado a ti.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. Conservación y eliminación de datos</h2>
+    <p>
+      <span class="pill local">En tu dispositivo</span>
+      &nbsp;Tus datos financieros existen mientras la app esté instalada, o hasta que uses <strong>Delete all
+      data</strong> en los Ajustes. Desinstalar la app los elimina por completo. Nosotros no tenemos ninguna copia ni
+      forma de recuperarlos por ti.
+    </p>
+    <p style="margin-top:14px;">
+      <span class="pill">Email de novedades</span>
+      &nbsp;Se conserva hasta que nos pidas eliminarlo o te des de baja con el enlace que incluiremos en cualquier email que enviemos.
+    </p>
+  </section>
+
+  <section>
+    <h2>6. Tus derechos</h2>
+    <p>
+      Como tus datos financieros nunca salen de tu dispositivo, ya los tienes tú: no hay nada que exportar,
+      rectificar o entregarte a petición, porque nunca tuvimos una copia. Respecto a lo único que sí conservamos (un
+      email opcional de novedades), puedes pedirnos en cualquier momento que te digamos qué tenemos, que lo corrijamos
+      o que lo eliminemos, conforme al RGPD o a cualquier norma local equivalente que te sea aplicable.
+    </p>
+  </section>
+
+  <section>
+    <h2>7. Privacidad de los menores</h2>
+    <p>NetPath no está dirigida a menores y no recogemos conscientemente información de personas menores de 16 años.</p>
+  </section>
+
+  <section>
+    <h2>8. Este sitio web</h2>
+    <p>
+      El sitio web de NetPath es una página estática. No usa cookies, analíticas ni rastreadores, y sirve sus propias
+      fuentes e imágenes en lugar de cargarlas desde terceros. Está alojado en GitHub Pages que, como cualquier
+      alojamiento web, puede tratar datos técnicos como tu dirección IP en sus registros de servidor; nosotros no
+      recibimos ni usamos esos datos.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. Cambios en esta política</h2>
+    <p>
+      Si esta política cambia de un modo relevante (un nuevo servicio de terceros o un nuevo tipo de dato recogido),
+      actualizaremos la fecha de «Última actualización» de arriba. Como la app no tiene forma de contactar contigo
+      directamente, te animamos a volver a consultar esta página de vez en cuando si te importa.
+    </p>
+  </section>
+
+  <div class="contact-box">
+    <h2>¿Preguntas, o quieres que borremos tu email?</h2>
+    <p>Escríbenos cuando quieras:</p>
+    <div class="email">barnacle1982@altmail.kr</div>
+  </div>
+
+  <footer>NetPath &middot; Esta página describe las prácticas de privacidad actuales de la app y no sustituye al asesoramiento legal.</footer>
+</div>
+</body>
+</html>

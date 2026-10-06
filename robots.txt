@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://netpathapp.github.io/sitemap.xml
