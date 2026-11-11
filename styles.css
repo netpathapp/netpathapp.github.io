@@ -85,9 +85,14 @@ a.store:hover { background: #04100B; }
 .trust { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 14px; color: var(--muted); }
 .trust li { display: flex; align-items: center; gap: 8px; }
 .trust svg { width: 16px; height: 16px; color: var(--sage-deep); flex: none; }
-.hero-panel { position: relative; overflow: hidden; border-radius: 36px; background: var(--sage); min-height: 520px; display: flex; justify-content: center; align-items: flex-start; padding-top: 44px; isolation: isolate; }
-.hero-panel .path { position: absolute; z-index: -1; width: 150%; max-width: none; left: -34%; bottom: -34%; color: rgba(8, 28, 21, 0.075); }
-.hero-panel .phone { margin-bottom: -150px; }
+.hero-panel { position: relative; overflow: hidden; border-radius: 36px; background: radial-gradient(120% 90% at 50% 0%, #D8F3DC 0%, #B7E4C7 38%, #95D5B2 72%, #74C69D 100%); min-height: 520px; display: flex; justify-content: center; align-items: flex-start; padding-top: 44px; isolation: isolate; }
+.hero-panel::before, .hero-panel::after { content: ""; position: absolute; z-index: -1; left: 50%; top: 52%; border-radius: 50%; transform: translate(-50%, -50%); border: 1px solid rgba(255, 255, 255, .45); pointer-events: none; }
+.hero-panel::before { width: 118%; aspect-ratio: 1; }
+.hero-panel::after { width: 84%; aspect-ratio: 1; border-color: rgba(255, 255, 255, .6); }
+.hero-panel .glow { position: absolute; z-index: -1; left: 50%; top: 46%; width: 70%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(closest-side, rgba(255, 255, 255, .75), rgba(255, 255, 255, 0)); pointer-events: none; }
+.hero-panel .phone { margin-bottom: -150px; animation: phone-float 6.5s ease-in-out infinite; filter: drop-shadow(0 34px 38px rgba(8, 28, 21, .28)); will-change: transform; }
+@keyframes phone-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+@media (prefers-reduced-motion: reduce) { .hero-panel .phone { animation: none; } }
 @media (min-width: 960px) {
   .hero { padding-block: 44px 88px; }
   .hero-grid { grid-template-columns: 1.02fr 0.98fr; gap: 56px; }
