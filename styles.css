@@ -230,3 +230,8 @@ a.store:hover { background: #04100B; }
 .inc-group li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; font-size: 16px; line-height: 1.45; }
 .inc-group li svg { width: 20px; height: 20px; margin-top: 2px; color: var(--sage-deep); }
 @media (min-width: 820px) { .includes { grid-template-columns: 1fr 1fr; } .inc-group { padding: 30px 32px; } }
+
+/* Hero call to action */
+.cta { display: grid; gap: 10px; justify-items: start; }
+.btn-lg { min-height: 58px; padding: 0 34px; font-size: 18px; }
+.cta-note { font-size: 14px; color: var(--muted); }
