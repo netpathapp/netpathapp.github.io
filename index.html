@@ -196,23 +196,20 @@
       <h2 class="h-display" id="t-pantallas">Diseñada para entenderse en segundos.</h2>
       <p class="lead" style="color:#4C5E54">Cuatro pestañas que responden a las preguntas que importan.</p>
     </div>
-    <div class="screens" role="list">
-      <figure role="listitem">
-        <div class="phone"><div class="phone-screen"><div class="statusbar"><span>9:41</span><span class="icons"><svg><use href="#i-signal"/></svg><svg><use href="#i-wifi"/></svg><svg><use href="#i-battery"/></svg></span></div><img loading="lazy" src="assets/screens/gastos.webp" width="750" height="1624" alt="Pantalla de gastos con la rueda de categorías y el presupuesto del mes"></div></div>
-        <figcaption><b>Tu mes, de un vistazo</b><span>La rueda de gastos, tu presupuesto y lo que te queda.</span></figcaption>
-      </figure>
-      <figure role="listitem">
-        <div class="phone"><div class="phone-screen"><div class="statusbar"><span>9:41</span><span class="icons"><svg><use href="#i-signal"/></svg><svg><use href="#i-wifi"/></svg><svg><use href="#i-battery"/></svg></span></div><img loading="lazy" src="assets/screens/patrimonio.webp" width="750" height="1624" alt="Pantalla de patrimonio con el total, su gráfica y la salud financiera"></div></div>
-        <figcaption><b>Tu patrimonio, claro</b><span>El total, su evolución y todo lo que tienes y debes.</span></figcaption>
-      </figure>
-      <figure role="listitem">
-        <div class="phone"><div class="phone-screen"><div class="statusbar"><span>9:41</span><span class="icons"><svg><use href="#i-signal"/></svg><svg><use href="#i-wifi"/></svg><svg><use href="#i-battery"/></svg></span></div><img loading="lazy" src="assets/screens/informes.webp" width="750" height="1624" alt="Pantalla de informes con la nota de salud financiera y sus indicadores"></div></div>
-        <figcaption><b>Tu salud financiera</b><span>Una nota de 0 a 100 y consejos para mejorarla.</span></figcaption>
-      </figure>
-      <figure role="listitem">
-        <div class="phone"><div class="phone-screen"><div class="statusbar"><span>9:41</span><span class="icons"><svg><use href="#i-signal"/></svg><svg><use href="#i-wifi"/></svg><svg><use href="#i-battery"/></svg></span></div><img loading="lazy" src="assets/screens/metas.webp" width="750" height="1624" alt="Pantalla de metas con el progreso de cada objetivo"></div></div>
-        <figcaption><b>Tus metas, apartadas</b><span>Cuánto llevas y cuánto apartar al mes para llegar.</span></figcaption>
-      </figure>
+    <div class="carousel" id="carousel" role="group" aria-roledescription="carrusel" aria-label="Pantallas de NetPath">
+      <div class="car-stage">
+        <div class="car-item" data-i="0"><div class="phone"><div class="phone-screen"><div class="statusbar"><span>9:41</span><span class="icons"><svg><use href="#i-signal"/></svg><svg><use href="#i-wifi"/></svg><svg><use href="#i-battery"/></svg></span></div><img loading="lazy" src="assets/screens/gastos.webp" width="750" height="1624" alt="Pantalla de gastos con la rueda de categorías y el presupuesto del mes"></div></div></div>
+        <div class="car-item" data-i="1"><div class="phone"><div class="phone-screen"><div class="statusbar"><span>9:41</span><span class="icons"><svg><use href="#i-signal"/></svg><svg><use href="#i-wifi"/></svg><svg><use href="#i-battery"/></svg></span></div><img loading="lazy" src="assets/screens/patrimonio.webp" width="750" height="1624" alt="Pantalla de patrimonio con el total, su gráfica y la salud financiera"></div></div></div>
+        <div class="car-item" data-i="2"><div class="phone"><div class="phone-screen"><div class="statusbar"><span>9:41</span><span class="icons"><svg><use href="#i-signal"/></svg><svg><use href="#i-wifi"/></svg><svg><use href="#i-battery"/></svg></span></div><img loading="lazy" src="assets/screens/informes.webp" width="750" height="1624" alt="Pantalla de informes con la nota de salud financiera y sus indicadores"></div></div></div>
+        <div class="car-item" data-i="3"><div class="phone"><div class="phone-screen"><div class="statusbar"><span>9:41</span><span class="icons"><svg><use href="#i-signal"/></svg><svg><use href="#i-wifi"/></svg><svg><use href="#i-battery"/></svg></span></div><img loading="lazy" src="assets/screens/metas.webp" width="750" height="1624" alt="Pantalla de metas con el progreso de cada objetivo"></div></div></div>
+      </div>
+      <div class="car-captions" aria-live="polite">
+        <p class="car-cap" data-i="0"><b>Tu mes, de un vistazo</b><span>La rueda de gastos, tu presupuesto y lo que te queda.</span></p>
+        <p class="car-cap" data-i="1"><b>Tu patrimonio, claro</b><span>El total, su evolución y todo lo que tienes y debes.</span></p>
+        <p class="car-cap" data-i="2"><b>Tu salud financiera</b><span>Una nota de 0 a 100 y consejos para mejorarla.</span></p>
+        <p class="car-cap" data-i="3"><b>Tus metas, apartadas</b><span>Cuánto llevas y cuánto apartar al mes para llegar.</span></p>
+      </div>
+      <div class="car-dots"><button type="button" class="car-dot" data-i="0" aria-label="Ver pantalla 1: Tu mes, de un vistazo"></button><button type="button" class="car-dot" data-i="1" aria-label="Ver pantalla 2: Tu patrimonio, claro"></button><button type="button" class="car-dot" data-i="2" aria-label="Ver pantalla 3: Tu salud financiera"></button><button type="button" class="car-dot" data-i="3" aria-label="Ver pantalla 4: Tus metas, apartadas"></button></div>
     </div>
     <p class="fine" style="text-align:center">Capturas con datos de ejemplo.</p>
   </div>
