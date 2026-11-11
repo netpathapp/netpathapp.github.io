@@ -221,3 +221,12 @@ a.store:hover { background: #04100B; }
 @media (min-width: 860px) { .sticky-cta { display: none; } }
 
 @media (max-width: 859px) { body { padding-bottom: 0; } }
+
+/* What's included: a grouped checklist (one column on phones, two on larger screens) */
+.includes { display: grid; gap: 14px; max-width: 1040px; margin-inline: auto; }
+.inc-group { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 26px 28px; display: grid; gap: 16px; align-content: start; }
+.inc-group h3 { font-size: 20px; font-weight: 700; line-height: 1.25; letter-spacing: -0.01em; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.inc-group ul { display: grid; gap: 13px; }
+.inc-group li { display: grid; grid-template-columns: 22px 1fr; gap: 10px; font-size: 16px; line-height: 1.45; }
+.inc-group li svg { width: 20px; height: 20px; margin-top: 2px; color: var(--sage-deep); }
+@media (min-width: 820px) { .includes { grid-template-columns: 1fr 1fr; } .inc-group { padding: 30px 32px; } }
