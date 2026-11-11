@@ -90,8 +90,8 @@ a.store:hover { background: #04100B; }
 .hero-panel::before { width: 118%; aspect-ratio: 1; }
 .hero-panel::after { width: 84%; aspect-ratio: 1; border-color: rgba(255, 255, 255, .6); }
 .hero-panel .glow { position: absolute; z-index: -1; left: 50%; top: 46%; width: 70%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(closest-side, rgba(255, 255, 255, .75), rgba(255, 255, 255, 0)); pointer-events: none; }
-.hero-panel .phone { margin-bottom: -150px; animation: phone-float 6.5s ease-in-out infinite; filter: drop-shadow(0 34px 38px rgba(8, 28, 21, .28)); will-change: transform; }
-@keyframes phone-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+.hero-panel .phone { margin-bottom: -150px; animation: phone-float 4.5s ease-in-out infinite; filter: drop-shadow(0 34px 38px rgba(8, 28, 21, .28)); will-change: transform; }
+@keyframes phone-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-18px); } }
 @media (prefers-reduced-motion: reduce) { .hero-panel .phone { animation: none; } }
 @media (min-width: 960px) {
   .hero { padding-block: 44px 88px; }
