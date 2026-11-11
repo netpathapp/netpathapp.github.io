@@ -92,7 +92,9 @@ a.store:hover { background: #04100B; }
 .hero-panel .glow { position: absolute; z-index: -1; left: 50%; top: 46%; width: 70%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(closest-side, rgba(255, 255, 255, .75), rgba(255, 255, 255, 0)); pointer-events: none; }
 .hero-panel .phone { margin-bottom: -150px; animation: phone-float 4.5s ease-in-out infinite; filter: drop-shadow(0 34px 38px rgba(8, 28, 21, .28)); will-change: transform; }
 @keyframes phone-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-18px); } }
-@media (prefers-reduced-motion: reduce) { .hero-panel .phone { animation: none; } }
+@keyframes phone-float-soft { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+/* People who ask their system for less motion still get a very gentle float, never the full one. */
+@media (prefers-reduced-motion: reduce) { .hero-panel .phone { animation: phone-float-soft 9s ease-in-out infinite; } }
 @media (min-width: 960px) {
   .hero { padding-block: 44px 88px; }
   .hero-grid { grid-template-columns: 1.02fr 0.98fr; gap: 56px; }

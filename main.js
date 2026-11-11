@@ -91,12 +91,13 @@ document.getElementById("year").textContent = new Date().getFullYear();
   function frame(now) {
     const dt = now - last;
     last = now;
-    if (visible && !reduced) {
+    if (visible) {
       if (phase !== target) {
-        const t = Math.min(1, (now - moveStart) / MOVE);
+        // With reduced motion the ring jumps straight to the chosen phone instead of turning.
+        const t = reduced ? 1 : Math.min(1, (now - moveStart) / MOVE);
         phase = from + (target - from) * ease(t);
         if (t >= 1) phase = target;
-      } else if (!paused) {
+      } else if (!paused && !reduced) {
         hold += dt;
         if (hold >= HOLD) goTo(Math.round(phase) + 1);
       }
